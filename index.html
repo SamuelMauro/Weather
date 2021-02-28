@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previsão do Tempo</title>
+  <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1 class="title">Previsão do tempo</h1>
+  </header>
+
+  <div id="search" class="input-group w-50  row mx-auto p-3">
+    <input list="dt" id="inputCity" type="text" class="form-control" placeholder="Busque por uma cidade..."
+      autocomplete="off">
+    <div class="input-group-append">
+      <button id="enviar" class="btn btn-outline-secondary" type="button">Procurar</button>
+    </div>
+  </div>
+
+  <div id="options"></div>
+
+  <div class="weather hidden">
+    <div class="container">
+      <div id="id-card" class="card shadow-lg rounded">
+        <img id="img-time" class="card-img-top" src="https:via.placeholder.com/400x300" alt="Imagem de capa do card">
+
+      </div>
+      <div id="icon-area">
+        <img id="icon-weather" src="" alt="">
+      </div>
+    </div>
+
+    <!-- ìcones -->
+    <div class="icon text-muted text-uppercase text-center details">
+      <h5 class="my-3">Nome da cidade</h5>
+      <div class="my-3">Condição do tempo</div>
+      <div class="display-4 my-4">
+        <span>Temperatura</span>
+        <span>&deg;C</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; Samuel Mauro da Silva</p>
+  </footer>
+
+  <script src="node_modules\popper.js\dist\popper.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+</body>
+
+</html>
